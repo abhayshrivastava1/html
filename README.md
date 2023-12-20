@@ -1,2 +1,2 @@
-chai ur html ki indepth repository
+chai aur html ki indepth repository
  

@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <img src="https://images.unsplash.com/photo-1704381375059-b6861e025dd8?w=900&auto=format&fit=crop&q=60&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxlZGl0b3JpYWwtZmVlZHw1fHx8ZW58MHx8fHx8" width="250px" height="150px" alt="no image"> 
+    <img src="./pixels-fruit.png.jpg" width="250px" height="150px" alt="no image"> 
+    <!-- // but majority of time only wodth attribute is used
+            always write the name of image without any space either use - or _ -->
+
+
+    <picture>
+        <source media="(min-widht: 700px)"  srcset="./pixels-fruit.png.jpg" />
+        <source media="(min-widht: 300px)"  srcset="./pixels-fruit2.png.jpg" />
+        <img src="./pixels-fruit.png.jpg" width="250px" height="150px" alt="no image"> 
+    </picture>
+    
+    <!-- image map generator -->
+    <img src="pexels-fruit.png.jpg" usemap="#image-map">
+
+    <map name="image-map">
+    <area onclick="one()" target="" alt="" title="" href="" coords="2025,2831,1354,2266" shape="rect">
+    <area onclick="two()" target="" alt="" title="" href="" coords="722,697,1216,697,1229,1210,613,1332,594,735" shape="poly">
+    </map>
+
+    <script>
+        function one(){
+            alert("Clicked on one")
+        }
+        function two(){
+            alert("Clicked on two")
+        }
+    </script>
+
+
+</body>
+</html>
+
+
+
+
+
+<!-- hw read picture tag from mdn  -->

@@ -4,8 +4,66 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Tables</title>
+    <style>
+        table{
+            width: 100%;
+            border-collapse: collapse;
+            text-align: center;
+        }
+        td,th{
+            border: 1px solid blueviolet;
+            padding: 15px;
+        }
+        tr{
+            background-color: #ec0d0d;
+        }
+        tr:nth-child(even){
+            background-color: antiquewhite;
+        }
+    </style>
 </head>
 <body>
-    
+    <table>
+        <tr>
+            <th>country</th>
+            <th>country code</th>
+            <th>country email</th>
+        </tr>
+        <tr>
+            <td>India</td>
+            <td>in</td>
+            <td>india@google.com</td>
+        </tr>
+        <tr>
+            <td>america</td>
+            <td>usa</td>
+            <td>usa@google.com</td>
+        </tr>
+        <tr>
+            <td>china</td>
+            <td>cn</td>
+            <td>china@google.com</td>
+        </tr>
+        <tr>
+            <td>korea</td>
+            <td>kr</td>
+            <td>korea@google.com</td>
+        </tr>
+    </table>
+    <table style="width: 50%;" >
+        <tr>
+            <th colspan="2">country</th>
+            <td>India</td>
+            <td>Japan</td>
+        </tr>
+        <tr>
+            <th>Code</th>
+            <td>in</td>
+            <td>jp</td>
+        </tr>
+    </table>
 </body>
 </html>
+
+
+<!-- hw read about tfoot from mdn -->
